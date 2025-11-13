@@ -1,10 +1,13 @@
 # APT34 (OilRig/HelixKitten)
 
 ## APT34 history
-Apt34 (also referred to as OilRig or HelixKitten) is a state-sponsored cyber espionage group that has been active since 2014. Some people believe this group is associated with the Iranian government.  
+APT34, also known as OilRig or HelixKitten, is a state-sponsored cyber espionage group that has been active since 2014. The group is believed to be associated with the Iranian government and primarily targets sectors across the Middle East.
 
 ## Nation/State Association
-APT34 is suspected to be associated with the Iranian government. Some cybersecurity experts believe the group works on behalf of the Iranian government based on infrastructure details that contain references to Iran, use of Iranian infrastructure, and targeting that aligns with nation-state interests.
+APT34 is strongly suspected to work on behalf of the Iranian government. Evidence supporting this includes 
+- Infrastructure details that contain references to Iran
+- Use of Iranian infrastructure
+- Targeting patterns that aligns with Iran’s geopolitical and intelligence priorities
 
 ## Target Industries
 APT34 targets a variety of sectors, including:
@@ -12,32 +15,39 @@ APT34 targets a variety of sectors, including:
 - Government
 - Energy
 
-They primarily focus on sectors across the Middle East, in particular the Persian Gulf region. However, they also conduct global attacks, including the United States, the United Kingdom, and parts of Asia.
+While their primary focus is the Persian Gulf region in the Middle Eat, APT34 has also conducted operations affecting organizations in the United States, United Kingdom, and Asia.
 
 ## Motives
-APT34 conducts cyber espionage that aligns with Iran’s geopolitical interests. Their espionage usually includes gathering intelligence, undermining adversaries, and disrupting infrastructure.
+APT34 conducts cyber espionage that aligns with Iran’s geopolitical interests. Their espionage usually includes 
+- Gathering intelligence
+- Undermining adversaries
+- Disrupting infrastructure.
 
 ## TTPs
-APT34 uses a variety of TTPS, including 
-- Spear Phishing Attachment (T1103)
-- Application Layer Protocol (T1071)
-- Command and Scripting Interpreter (T1059)
+APT34 uses a variety of techniques, including 
+- [Spear Phishing Attachment (T1566.001)](https://attack.mitre.org/techniques/T1566/001/) - Sends spearphising emails with malicious attachments using compromised and/or spoofed email accounts
+- [Application Layer Protocol (T1071)](https://attack.mitre.org/techniques/T1071/) - Used HTTP and DNS for command and control (C2) communication 
+- [Command and Scripting Interpreter (T1059)](https://attack.mitre.org/techniques/T1059/) - Used various types of scripting for execution.
 
-Attack types include malware, spear phishing, credential harvesting, and supply chain attacks.
+Common attack types include malware, spear phishing, credential harvesting, and supply chain attacks.
 
 ## Defensive Security Measures
 The following are some security measures to defend against cyberattacks conducted by APT34:
--  User Account and Access Control
-   - Use user Account Management to manage the creation, modification, use, and permissions of user accounts
-   - Reset accounts that are known to be part of breached credentials either immediately or after detecting brute force attempts
-   - Use Multi-Factor Authentication
-   - Use the Principle of Least Privilege
-- Harden and Monitor Network 
-  - Use network appliances to filter ingress/egress traffic and perform protocol-based filtering
-  - Network Intrusion Prevention Systems use network signatures to identify traffic for specific adversary malware that can be used to mitigate activity at the network level
-  - Segmenting the network into smaller, isolated networks
-  - Disable unnecessary ports and services
-- Employee Training
-  - Provide regular cybersecurity awareness training of social engineering tactics
-- Incident Response
-  - Regularly update incident response plan 
+1. **User Account and Access Control**
+    - Implement strong account management to control account creation, modification, and permissions
+    - Reset or disable accounts associated with known or suspected breaches.
+    - Enforce Multi-Factor Authentication (MFA)
+    - Enforce the Principle of Least Privilege (PoLP)
+
+2. **Network Hardening and Monitoring**
+    - Reinforce network firewalls to filter ingress/egress traffic
+    - Update signatures in Network Intrusion Prevention Systems (NIPS) to detect adversary activity
+    - Segment the network into smaller, isolated zones to limit lateral movement
+    - Disable unnecessary ports and services
+
+3. **Employee Training**
+    - Provide regular cybersecurity awareness training focused on phishing and social engineering
+
+4. **Incident Response**
+    - Maintain and regularly update the incident response plan (IRP)
+    - Conduct periodic tabletop exercises to evaluate readiness and improve response procedures.
