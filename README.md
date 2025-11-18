@@ -3,6 +3,10 @@ Datacom virtual experience program on Forage.
 
 Investigate a cyberattack and conduct a comprehensive risk assessment with Datacom.
 
+## Files Overview
+- **APT34_Threat_Analysis.md**: Detailed research and analysis of APT34
+-  **Cybersecurity_Risk_Assessment.pdf**: Risk assessment including context definition, risk matrix, scenario analysis, and mitigation strategies.
+
 ## Task 1 - APT breach: Analysing The Impact On Information Security
 
 ### Scenario
